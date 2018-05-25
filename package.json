@@ -1,0 +1,64 @@
+{
+    "name": "share-settings",
+    "displayName": "Share Settings",
+    "description": "share settings and extension list",
+    "version": "0.0.1",
+    "publisher": "superhakgoman",
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.getExtensions",
+        "onCommand:extension.getUserSettings",
+        "onCommand:extension.getKeybinding",
+        "onCommand:extension.getAll",
+        "onCommand:extension.merge"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "category": "Share-Settings",
+                "command": "extension.getExtensions",
+                "title": "설치된 확장 공유"
+            },
+            {
+                "category": "Share-Settings",
+                "command": "extension.getUserSettings",
+                "title": "유저 설정 공유"
+            },
+            {
+                "category": "Share-Settings",
+                "command": "extension.getKeybinding",
+                "title": "키 바인딩 공유"
+            },
+            {
+                "category": "Share-Settings",
+                "command": "extension.getAll",
+                "title": "전부 공유"
+            },
+            {
+                "category": "Share-Settings",
+                "command": "extension.merge",
+                "title": "설정 데이터 병합"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "dependencies": {
+        "lz-string": "^1.4.4"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "eslint": "^4.11.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
