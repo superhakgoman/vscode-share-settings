@@ -4,6 +4,14 @@
     "description": "share settings and extension list",
     "version": "0.0.1",
     "publisher": "superhakgoman",
+    "bugs": {
+        "url": "https://github.com/superhakgoman/vscode-share-settings/issues",
+        "email": "superhakgoman@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/superhakgoman/vscode-share-settings.git"
+    },
     "engines": {
         "vscode": "^1.23.0"
     },
